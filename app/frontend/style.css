@@ -6,6 +6,11 @@
     font-family: Bodoni Moda;
     src: url(./Fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf);
 }
+@font-face {
+    font-family: Junge;
+    src: url(./Fonts/Junge-Regular.ttf);
+}
+
 :root{
     --font1: Bodoni Moda;
     --font2: Junge;
@@ -44,8 +49,6 @@ div.searchingSec{
     display: flex;
     gap: 8px;
 }
-
-
 input#searchbar{
     -webkit-appearance: none;
     border: 0px;
@@ -104,8 +107,9 @@ div.profileName{
 main{
     display: grid;
     grid-template-columns:100px 626px 511px;
-    grid-template-rows: 880px;
+    grid-template-rows: 823px;
 }
+/*Navigation Section*/
 nav{
     grid-area: 1 / 1 / 2 / 2;
     background-color: #f0EEE2;
@@ -166,12 +170,136 @@ div.navBarContainer>.navItemH:hover{
     fill: white;
 }
 
-
+/*Section 1*/
 section#sec1{
     grid-area: 1 / 2 / 2 / 3;
     background-color: #F0EEE2;
+    display: grid;
+    grid-template-columns: 626px ; 
+    grid-template-rows: 333px 344px 146px;
+}
+    /*Section 1 Hero*/
+.hero{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.hero>.content{
+    width: 378px;
+    height: 280px;
+    margin: 28px 6px 25px 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.hero>.content>h1{
+    width: 341px;
+    color: black;
+    font-weight: 400;
+    font-family: var(--font2);
+    font-size: 45px;
+    letter-spacing: -1.35px;
+}
+.hero>.content>.sloganText{
+    width: 378px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    letter-spacing: -0.48px;
+}
+button.signup{
+    -webkit-appearance: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: -0.48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 124px;
+    height: 34px;
+    border-radius: 50px;
+    background-color: #252833;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+button.signup:hover{
+    transform: scale(1.03);
+}
+button.signup:active{
+    transform: scale(1);
+}
+    /*Section 1 Popular Books*/
+.popularSec{
+    grid-area: 2 / 1 / 3 / 2;
+}
+.popularSec>.content2{
+    width: 554.667px;
+    height: 279px;
+    margin: 26px 37px 39px 34px;
+}
+.popularSec>.content2>.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popularSec>.content2>.head>#title{
+    font-family: Junge;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.72px;
+}
+.popularSec>.content2>.head>svg{
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.popularSec>.content2>.head>svg:hover{
+    transform: scale(1.1);
+}
+.popularSec>.content2>.popularBooks{
+    display: grid;
+    grid-template-columns: repeat(4,113px);
+    grid-template-rows: 222px;
+    gap: 34px;
+    margin-top:28px;
+    justify-content: center;
 }
 
+.popularBooks>.book{
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.popularBooks>.book:hover{
+    transform: scale(1.1);
+}
+.bookCover{
+    height:157px;
+    width: 113px;
+    box-shadow: -10px 6px 4px 0px rgba(0, 0, 0, 0.25);
+    
+}
+.bookName{
+    width: 113px;
+    height: 49px;
+    font-family: var(--font1);
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: -0.42px;
+    overflow: hidden;
+    color: #000000;
+    margin-top:16px;
+}
+
+
+
+    /*Section 1 Collection*/
+.collectionSec{
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: gainsboro;
+}
+
+
+/*Section 2*/
 section#sec2{
     grid-area: 1 / 3 / 2 / 4;
     background-color: #FDFCF7;
