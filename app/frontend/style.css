@@ -243,7 +243,7 @@ button.signup:active{
     justify-content: space-between;
     align-items: center;
 }
-.popularSec>.content2>.head>#title{
+#title{
     font-family: Junge;
     font-size: 24px;
     font-weight: 400;
@@ -297,10 +297,122 @@ button.signup:active{
     grid-area: 3 / 1 / 4 / 2;
     background-color: gainsboro;
 }
+.collectionSec>.content3{
+    margin : 0px 38px 9px 34px;
+    width: 554px;
+    height: 137px;
+}
+.content3>.collectionsContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:33px;
+}
+.collectionsContainer>.collection{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+    transition: all 0.4s ease-out;
+}
+.collection:hover{
+    transform: scale(1.07);
+}
+.collection>.collectionBooks{
+    display: flex;
+    position: relative;
+    height: 100px;
+    
+}
+.collection>.collectionName{
+    width: 109px;
+    height: fit-content;
+    text-align: center;
+    margin-top: 15px;
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.42px;
+    
+}
+.collection .collImg{
+    position: absolute;
+    width: 63.3px;
+    height: 90px;
+}
+.collImg1{
+    transform: translate(20px)  rotate(-29.611deg) ;
+}
+.collImg2{
+    transform: translate(32px) rotate(-19.559deg);
+}
+.collImg3{
+    transform: translate(48px) rotate(-9.714deg);
+}
+
+
 
 
 /*Section 2*/
 section#sec2{
     grid-area: 1 / 3 / 2 / 4;
     background-color: #FDFCF7;
+    display: grid;
+    grid-template-columns: 511px;
+    grid-template-rows: 333px 174px 316px;
+}
+.mainBookSec{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.mainBookSec>.mainBookContent{
+    display: flex;
+    flex-direction: column;
+    margin: 23px 34px 80px 217px;
+}
+.mainBookContent>.title{
+    width: 244px;
+    font-family: var(--font2);
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: -0.99px;
+    margin-bottom: 16px;
+}
+.mainBookContent>.pages{
+    font-family: var(--font2);
+    font-size: 16px;
+    letter-spacing: -0.66px;
+    margin-bottom: 32px;
+}
+.pages>span{
+    color: #DE2020;
+}
+.mainBookContent>.booksQuote{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.booksQuote>#quote{
+    width: 259px;
+    height: fit-content;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    letter-spacing: -0.48px;
+}
+.booksQuote>#quoteAuthor{
+    width: fit-content;
+    align-self: end;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    letter-spacing: -0.54px;
+}
+
+
+.scheduleSec{ 
+    grid-area: 2/ 1 / 3 / 2;
+    background-color: antiquewhite;
+}
+.bookSumSec{
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: #252833;
 }
