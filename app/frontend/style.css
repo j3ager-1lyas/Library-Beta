@@ -354,7 +354,12 @@ button.signup:active{
 
 
 /*Section 2*/
+#mainPageImage{
+    position: absolute;
+    translate: -220px;
+}
 section#sec2{
+    position: relative;
     grid-area: 1 / 3 / 2 / 4;
     background-color: #FDFCF7;
     display: grid;
@@ -410,9 +415,139 @@ section#sec2{
 
 .scheduleSec{ 
     grid-area: 2/ 1 / 3 / 2;
-    background-color: antiquewhite;
 }
+.scheduleSec>.scheduleContent{
+    width: 445px;
+    height: 123px;
+    margin: 26px 32px 25px 34px;
+}
+.scheduleContent>.scheduleHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.scheduleHeader>#title{
+    font-family: var(--font1);
+    font-size: 24px;
+    letter-spacing: -0.72px;
+}
+.scheduleHeader>.sliders{
+    display: flex;
+    gap: 8px;
+    align-items: end;
+}
+.sliders>.arrow{
+    margin-bottom: 5px;
+    width: 24px;
+    height: 25px;
+    stroke: rgba(0, 0, 0, 0.9);
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.sliders>.arrow:hover{
+    transform: scale(1.1);
+}
+.scheduleContent>.date{
+    display: flex;
+    width: 416px;
+    height: 64px;
+    margin: 30px 15px 0px 14px;
+    gap:16px;
+}
+.date>.day{
+    width: 38px;
+    height: 64px;
+    border-radius: 50px;
+    background: rgba(217, 217, 217, 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11.56px;
+}
+.day>#dayName,.day>#dayDate{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+    letter-spacing: -0.3px;
+}
+
+
 .bookSumSec{
     grid-area: 3 / 1 / 4 / 2;
-    background-color: #252833;
+}
+.bookSumSec>.summariesContent{
+    width: 445px;
+    display: flex;
+    margin: 7px 32px 7px 34px;
+}
+.summariesContent>.bookSummaries{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.bookSummaries>.summariesContainer{
+    width: 405px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    justify-content: start;
+}
+.summariesContainer>.sum{
+    width: 392px;
+    height: fit-content;
+    display: flex;
+    gap: 16px;
+}
+.sum>.sum1Img{
+    width: 74px;
+    height:74px;
+    background-image: url(./Images/Beyond\ Good\ and\ Evil.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.sum>.sum2Img{
+    width: 74px;
+    height:74px;
+    background-image: url(./Images/Elon\ Musk.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.sum>.bookSummary{
+    margin-top:26px;
+    width: 302px;
+}
+.bookSummary>.booksTitle{
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.42px;
+}
+.bookSummary>.textSummary{
+    width: fit-content;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 11px;
+}
+.sumSliders{
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 58px;
+    gap: 8px;
+}
+.sumSliders>.arrow{
+    width: 24px;
+    height: 25px;
+    stroke: rgba(0, 0, 0, 0.9);
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.sumSliders>.arrow:hover{
+    transform: scale(1.1);
 }
